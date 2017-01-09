@@ -12,3 +12,10 @@ http://stackoverflow.com/questions/1184624/convert-form-data-to-javascript-objec
 https://code.lengstorf.com/get-form-values-as-json/
 
 https://github.com/marioizquierdo/jquery.serializeJSON
+
+
+# collapse List
+http://code.stephenmorley.org/javascript/collapsible-lists/
+
+# Dynamic Form Fields - Add & Remove
+http://bootsnipp.com/snippets/featured/dynamic-form-fields-add-amp-remove

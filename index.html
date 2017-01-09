@@ -52,23 +52,67 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-lg-3 control-label">Monitor</label>
+            <label class="col-lg-3 control-label">Monitoring:</label>
             <div class="col-lg-8">
-              <div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Name:</label>
-                  <div class="col-lg-8">
-                    <input class="form-control" type="text" value="cpu_util">
+              <div class="panel-group">
+                <!-- cpu_util -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#cpu_util" data-toggle="collapse">cpu_util</a>
+                    </h4>
+                  </div>
+                  <div class="panel-collapse collapse in" id="cpu_util">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+       
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Scale_in_threshold:</label>
-                  <div class="col-lg-8">
-                    <input class="form-control" type="text" value="10">
+                <!-- disk_util -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#disk_util" data-toggle="collapse">disk_util</a>
+                    </h4>
+                  </div>
+                  <div class="panel-collapse collapse" id="disk_util">
+                    <ul class="list-group">
+                      <li class="list-group-item">Name</li>
+                      <li class="list-group-item">Scale_in_threshold</li>
+                      <li class="list-group-item">Scale_out_threshold</li>
+                      <li class="list-group-item">Scale_in_unit</li>
+                      <li class="list-group-item">Scale_out_unit</li>
+                      <li class="list-group-item">Reaction_time</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Scale_out_threshold:</label>
-                  <div class="col-lg-8">
-                    <input class="form-control" type="text" value="15">
+                <!-- mem_util -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#mem_util" data-toggle="collapse">mem_util</a>
+                    </h4>
+                  </div>
+                  <div class="panel-collapse collapse" id="mem_util">
+                    <ul class="list-group">
+                      <li class="list-group-item">Name</li>
+                      <li class="list-group-item">Scale_in_threshold</li>
+                      <li class="list-group-item">Scale_out_threshold</li>
+                      <li class="list-group-item">Scale_in_unit</li>
+                      <li class="list-group-item">Scale_out_unit</li>
+                      <li class="list-group-item">Reaction_time</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -85,6 +129,148 @@
         </form>
       </fieldset>
     </div>
+  </div>
+  
+  <div class="container">
+    <h3>Collapse Example</h3>
+    <div class="panel-group">
+      <!-- cpu_util -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a href="#cpu_util" data-toggle="collapse">cpu_util</a>
+          </h4>
+        </div>
+        <div class="panel-collapse collapse in" id="cpu_util">
+          <ul class="list-group">
+            <li class="list-group-item">Name</li>
+            <li class="list-group-item">Scale_in_threshold</li>
+            <li class="list-group-item">Scale_out_threshold</li>
+            <li class="list-group-item">Scale_in_unit</li>
+            <li class="list-group-item">Scale_out_unit</li>
+            <li class="list-group-item">Reaction_time</li>
+          </ul>
+        </div>
+      </div>
+      <!-- disk_util -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a href="#disk_util" data-toggle="collapse">disk_util</a>
+          </h4>
+        </div>
+        <div class="panel-collapse collapse in" id="disk_util">
+          <ul class="list-group">
+            <li class="list-group-item">Name</li>
+            <li class="list-group-item">Scale_in_threshold</li>
+            <li class="list-group-item">Scale_out_threshold</li>
+            <li class="list-group-item">Scale_in_unit</li>
+            <li class="list-group-item">Scale_out_unit</li>
+            <li class="list-group-item">Reaction_time</li>
+          </ul>
+        </div>
+      </div>
+      <!-- mem_util -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a href="#mem_util" data-toggle="collapse">mem_util</a>
+          </h4>
+        </div>
+        <div class="panel-collapse collapse in" id="mem_util">
+          <ul class="list-group">
+            <li class="list-group-item">Name</li>
+            <li class="list-group-item">Scale_in_threshold</li>
+            <li class="list-group-item">Scale_out_threshold</li>
+            <li class="list-group-item">Scale_in_unit</li>
+            <li class="list-group-item">Scale_out_unit</li>
+            <li class="list-group-item">Reaction_time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h3>Accordion Example</h3>
+    <div class="panel-group" id="accordion1">
+      <!-- cpu_util panel -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a href="#a_cpu_util" data-toggle="collapse" data-parent="#accordion1" >cpu_util</a>
+          </h4>
+        </div>
+        <div class="collapse panel-collapse" id="a_cpu_util">
+          <div class="panel-body">
+            Show Cpu
+          </div>
+        </div>
+      </div>
+
+      <!-- disk_util panel -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a href="#a_disk_util" data-toggle="collapse" data-parent="#accordion1" >disk_util</a>
+          </h4>
+        </div>
+        <div class="collapse panel-collapse" id="a_disk_util">
+          <div class="panel-body">
+            Show Disk
+          </div>
+        </div>
+      </div>
+
+      <!-- mem_util panel -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a href="#a_mem_util" data-toggle="collapse" data-parent="#accordion1" >mem_util</a>
+          </h4>
+        </div>
+        <div class="collapse panel-collapse" id="a_mem_util">
+          <div class="panel-body">
+            Show Mem
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <form class="form-horizontal" role="form" >
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Name:</label>
+        <div class="col-lg-8">
+          <input class="form-control" type="text" value="cpu_util">
+      </div>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Scale_in_threshold:</label>
+        <div class="col-lg-8">
+          <input class="form-control" type="text" value="10">
+      </div>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Scale_out_threshold:</label>
+        <div class="col-lg-8">
+          <input class="form-control" type="text" value="15">
+      </div>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Scale_in_unit:</label>
+        <div class="col-lg-8">
+          <input class="form-control" type="text" value="10">
+      </div>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Scale_out_unit:</label>
+        <div class="col-lg-8">
+          <input class="form-control" type="text" value="15">
+      </div>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Reaction_time:</label>
+        <div class="col-lg-8">
+          <input class="form-control" type="text" value="15">
+      </div>
+    </form>
   </div>
   
 
